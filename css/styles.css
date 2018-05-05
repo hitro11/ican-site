@@ -1,0 +1,49 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  margin-top: 4em;
+}
+
+.navbar {
+  background-color: #1f1f1f !important;
+}
+.navbar .active {
+  font-weight: bold;
+}
+
+.nav-item {
+  color: #e02828;
+}
+.nav-item:hover {
+  color: #ed8181;
+}
+
+.cover {
+  width: 100vw;
+  height: 100vh;
+  margin-left: -0.99em;
+  filter: brightness(40%);
+}
+
+.btn-primary {
+  position: relative;
+  margin-top: -100vh;
+  margin-left: 40vw;
+  width: 25em;
+  height: 40px;
+  background: #8e1414;
+  border: none;
+  outline: 0;
+}
+.btn-primary:hover, .btn-primary:active {
+  background: #ba1b1b !important;
+  border: 0 !important;
+  outline: 0 !important;
+}
+.btn-primary:focus {
+  background: #e02828 !important;
+  box-shadow: none !important;
+}

@@ -1,0 +1,63 @@
+//variables
+$col-pri: #e02828;
+$col-pri-dark: darken($col-pri, 10%);
+$col-pri-darker: darken($col-pri, 20%);
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  margin-top: 4em;
+}
+
+.navbar {
+  background-color: rgb(31, 31, 31) !important;
+
+  .active {
+    font-weight: bold;
+  }
+}
+
+.nav-item {
+  color: $col-pri;
+
+  &:hover {
+    color: lighten( $col-pri, 20% );
+  }
+}
+
+
+.cover {
+  width: 100vw;
+  height: 100vh;
+  margin-left: -0.99em;
+  filter: brightness(40%);
+}
+
+
+.btn-primary {
+
+  position: relative;
+  margin-top: -100vh;
+  margin-left: 40vw;
+  width: 25em;
+  height: 40px;
+  background: $col-pri-darker;
+  border: none;
+  outline: 0;
+
+  &:hover, &:active {
+    background: $col-pri-dark !important;
+    border: 0 !important;
+    outline: 0 !important;
+    
+  }
+
+  &:focus {
+    background: $col-pri !important;
+    box-shadow: none !important;
+  }
+}
