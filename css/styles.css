@@ -1,10 +1,27 @@
 html, body {
   margin: 0;
   padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .main {
   margin-top: 4em;
+  padding: 4em;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: "Roboto", sans-serif;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.home {
+  margin: 0;
+  padding: 0;
 }
 
 .navbar {
@@ -21,19 +38,38 @@ html, body {
   color: #ed8181;
 }
 
-.cover {
+.hero {
   width: 100vw;
   height: 100vh;
-  margin-left: -0.99em;
-  filter: brightness(40%);
+  margin: 66px 0 0 0;
+  filter: brightness(17%);
+  position: relative;
+  z-index: -1;
+}
+
+.call-to-action {
+  display: flex;
+  margin-top: -65vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.call-to-action h1 {
+  color: whitesmoke;
+  margin: 0 0 1.3em 0;
+}
+.call-to-action .home-title {
+  font-size: 5em;
+  margin: 0 0 0.1em 0;
+}
+
+.btn-hero {
+  width: 25em;
+  height: 40px;
 }
 
 .btn-primary {
-  position: relative;
-  margin-top: -100vh;
-  margin-left: 40vw;
-  width: 25em;
-  height: 40px;
+  color: white;
   background: #8e1414;
   border: none;
   outline: 0;
@@ -46,4 +82,94 @@ html, body {
 .btn-primary:focus {
   background: #e02828 !important;
   box-shadow: none !important;
+}
+
+.btn-home-card {
+  width: 30%;
+}
+
+.home2 {
+  position: relative;
+  top: 50vh;
+}
+
+.flex-container-home {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-item-home {
+  flex: 0 0 30%;
+}
+
+.card {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.3), 0 10px 10px rgba(0, 0, 0, 0.35);
+  padding: 1em;
+  margin: 0 1em 1em 1em;
+  background: whitesmoke;
+}
+
+.home-card {
+  border: 1px solid #ba1b1b;
+}
+
+.card-title {
+  color: #8e1414;
+}
+
+hr {
+  border-color: black;
+  width: 50%;
+  margin-top: -0.5em;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: space-between;
+  width: 100%;
+  margin: 2em 0;
+}
+
+.flex-container-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 2em;
+}
+
+.flex-item {
+  flex: 1 auto;
+}
+
+.flex-item-2 {
+  flex: 0 0 45%;
+}
+
+.left-attach {
+  margin: 0 0 0 0;
+}
+
+.invis {
+  visibility: hidden;
+}
+
+#map {
+  margin: 0 0 0 0.3em;
+  flex: 1 0 65%;
+}
+
+.contact-icon {
+  transform: scale(1.3);
+  margin: 0.8em 0.8em 0.8em 0;
+}
+
+form {
+  height: 100%;
+}
+
+footer {
+  background: black;
 }
