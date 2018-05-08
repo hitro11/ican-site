@@ -7,7 +7,7 @@
 
 
   <div class="call-to-action">
-    <h1 class="home-title">ICAN IMMIGRATION</h1>
+    <h1 class="home-title"><span class="col-pri">ICAN</span> IMMIGRATION</h1>
     <h1>Your trusted immigration company since 2000</h1>
     <a href="./assessment.php" class="button btn btn-primary btn-hero">Take the free assessment</a>
   </div>

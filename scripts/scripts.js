@@ -1,23 +1,36 @@
 function initMap() {
   var uluru = {lat: 43.6269323, lng: -79.6280822};
-
+  var mapStyle = 
+  [{"featureType":"all","elementType":"labels","stylers":[{"gamma":0.26},{"visibility":"on"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#d1e5d1"}]},{"featureType":"administrative.country","elementType":"geometry.fill","stylers":[{"color":"#d1e5d1"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"on"},{"lightness":-50}]},{"featureType":"administrative.province","elementType":"labels.text","stylers":[{"lightness":20}]},{"featureType":"administrative.province","elementType":"labels.text.stroke","stylers":[{"visibility":"on"}]},{"featureType":"administrative.locality","elementType":"geometry.fill","stylers":[{"color":"#d1e5d1"}]},{"featureType":"administrative.neighborhood","elementType":"geometry.fill","stylers":[{"color":"#d1e5d1"}]},{"featureType":"administrative.land_parcel","elementType":"geometry.fill","stylers":[{"color":"#d1e5d1"}]},{"featureType":"landscape.natural","elementType":"geometry.fill","stylers":[{"color":"#e8efcf"}]},{"featureType":"landscape.natural.landcover","elementType":"geometry.fill","stylers":[{"color":"#d1e5d1"}]},{"featureType":"landscape.natural.terrain","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#d1e5d1"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"poi.attraction","elementType":"geometry.fill","stylers":[{"color":"#d1e5d1"}]},{"featureType":"poi.business","elementType":"geometry.fill","stylers":[{"color":"#d1e5d1"}]},{"featureType":"poi.government","elementType":"geometry.fill","stylers":[{"color":"#d1e5d1"}]},{"featureType":"poi.medical","elementType":"geometry.fill","stylers":[{"color":"#d1e5d1"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"color":"#d1e5d1"}]},{"featureType":"poi.place_of_worship","elementType":"geometry.fill","stylers":[{"color":"#d1e5d1"}]},{"featureType":"poi.school","elementType":"geometry.fill","stylers":[{"color":"#d1e5d1"}]},{"featureType":"poi.sports_complex","elementType":"geometry.fill","stylers":[{"color":"#d1e5d1"}]},{"featureType":"road","elementType":"all","stylers":[{"hue":"#ffffff"}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"color":"#efefef"}]},{"featureType":"road","elementType":"labels.text.stroke","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"lightness":40},{"hue":"#ffffff"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#dcb4b4"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#dcb4b4"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"lightness":15}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#bbe0ed"}]}]; 
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 16,
+    zoom: 15,
     center: uluru,
-    mapTypeControlOptions: {
-      mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
-              'styled_map']
-    }
+    styles: mapStyle
   });
 
-  //Associate the styled map with the MapTypeId and set it to display.
-  map.mapTypes.set('styled_map', styledMapType);
-   // map.setMapTypeId('styled_map');
+  var icon = {
+    url: '../assets/map_marker.png',
+    scaledSize: new google.maps.Size(35,35), // scaled size
+  }
   
   var marker = new google.maps.Marker({
     position: uluru,
-    map: map
+    map: map,  
+    icon: icon
   });
+
+  var infoContent = 'ICAN Immigraton';
+
+  var infowindow = new google.maps.InfoWindow({
+    content: infoContent
+  });
+
+  marker.addListener("click", function() {
+      infowindow.open(map, marker);
+  });
+
+  infowindow.open(map, marker);
+   
 }
 
 function checkIfHomePage() {
@@ -27,6 +40,9 @@ function checkIfHomePage() {
     var homeContainer = document.getElementsByClassName("main")[0];
     homeContainer.classList.add("home");
     homeContainer.classList.remove("main");
+
+    var footer = document.getElementsByTagName("footer");
+
   }
 }
 
@@ -35,154 +51,4 @@ window.addEventListener("load", () => {
   });
 
 
-
-
 // map style
-var styledMapType = new google.maps.StyledMapType(
-  [
-    {
-        "featureType": "administrative",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "color": "#444444"
-            }
-        ]
-    },
-    {
-        "featureType": "administrative.neighborhood",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "visibility": "off"
-            },
-            {
-                "hue": "#17ff00"
-            }
-        ]
-    },
-    {
-        "featureType": "administrative.neighborhood",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "visibility": "on"
-            }
-        ]
-    },
-    {
-        "featureType": "landscape",
-        "elementType": "all",
-        "stylers": [
-            {
-                "color": "#f2f2f2"
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "poi.business",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "poi.business",
-        "elementType": "labels.text",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "poi.business",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "road",
-        "elementType": "all",
-        "stylers": [
-            {
-                "saturation": -100
-            },
-            {
-                "lightness": 45
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "simplified"
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "color": "#ff0000"
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "labels.icon",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "road.local",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "visibility": "on"
-            }
-        ]
-    },
-    {
-        "featureType": "transit",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "all",
-        "stylers": [
-            {
-                "color": "#0088cc"
-            },
-            {
-                "visibility": "on"
-            }
-        ]
-    }
-  ], 
-  {name: 'Styled Map'} );

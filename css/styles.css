@@ -2,7 +2,9 @@ html, body {
   margin: 0;
   padding: 0;
   max-width: 100%;
+  height: 100%;
   overflow-x: hidden;
+  overflow-y: initial;
 }
 
 .main {
@@ -12,11 +14,16 @@ html, body {
 
 h1, h2, h3, h4, h5, h6, p {
   font-family: "Roboto", sans-serif;
+  color: #474747;
 }
 
 .center {
   display: flex;
   justify-content: center;
+}
+
+.col-pri {
+  color: #e02828;
 }
 
 .home {
@@ -25,7 +32,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .navbar {
-  background-color: #1f1f1f !important;
+  background-color: #2d2d2d !important;
 }
 .navbar .active {
   font-weight: bold;
@@ -40,7 +47,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .hero {
   width: 100vw;
-  height: 100vh;
+  height: 110vh;
   margin: 66px 0 0 0;
   filter: brightness(17%);
   position: relative;
@@ -89,8 +96,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .home2 {
-  position: relative;
-  top: 50vh;
+  position: static;
+  margin-top: 23%;
 }
 
 .flex-container-home {
@@ -118,9 +125,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 hr {
-  border-color: black;
-  width: 50%;
-  margin-top: -0.5em;
+  border-color: #2d2d2d;
+  width: 100%;
 }
 
 .flex-container {
@@ -129,7 +135,7 @@ hr {
   justify-content: flex-start;
   align-content: space-between;
   width: 100%;
-  margin: 2em 0;
+  margin: 5em 0 5em 0;
 }
 
 .flex-container-col {
@@ -149,7 +155,7 @@ hr {
 }
 
 .left-attach {
-  margin: 0 0 0 0;
+  margin-right: 0;
 }
 
 .invis {
@@ -157,7 +163,7 @@ hr {
 }
 
 #map {
-  margin: 0 0 0 0.3em;
+  margin-left: 0;
   flex: 1 0 65%;
 }
 
@@ -167,9 +173,17 @@ hr {
 }
 
 form {
-  height: 100%;
+  width: 45%;
 }
 
 footer {
-  background: black;
+  position: static;
+  background: #2d2d2d;
+  box-shadow: 0 50vh 0 50vh #2d2d2d;
+}
+footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer p {
+  color: white;
+}
+footer p {
+  transform: scale(0.7);
 }
