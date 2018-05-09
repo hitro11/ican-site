@@ -22,6 +22,11 @@ h1, h2, h3, h4, h5, h6, p {
   justify-content: center;
 }
 
+.form-row-around {
+  display: flex;
+  justify-content: space-between;
+}
+
 .col-pri {
   color: #e02828;
 }
@@ -70,11 +75,6 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0 0 0.1em 0;
 }
 
-.btn-hero {
-  width: 25em;
-  height: 40px;
-}
-
 .btn-primary {
   color: white;
   background: #8e1414;
@@ -89,6 +89,16 @@ h1, h2, h3, h4, h5, h6, p {
 .btn-primary:focus {
   background: #e02828 !important;
   box-shadow: none !important;
+}
+
+.btn-hero {
+  width: 25em;
+  height: 40px;
+}
+
+.btn-submit {
+  width: 50%;
+  margin-top: 2em;
 }
 
 .btn-home-card {
@@ -174,6 +184,10 @@ hr {
 
 form {
   width: 45%;
+}
+
+.form-inline .form-control {
+  float: right;
 }
 
 footer {
