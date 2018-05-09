@@ -34,6 +34,14 @@ h1,h2,h3,h4,h5,h6,p {
 .form-row-around {
   display: flex;
   justify-content: space-between;
+  margin: 0.5em 2em;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .col-pri {
@@ -236,15 +244,29 @@ hr {
   margin: 0.8em 0.8em 0.8em 0;
 }
 
+
+
+
+
+//forms///
 form {
-  width: 45%;
+  width: 60%;
+  margin: 2em 0;
+  
+  h4 {
+    color: $col-pri;
+    margin: 0.4em 0;
+  }
+  
+  .form-heading {
+    font-size: 2em;
+    background: wheat;
+  }
+  
+  input.form-control-sm {
+    width: 55% !important;
+  }
 }
-
-.form-inline .form-control {
-  float: right;
-}
-
-
 
 
 //footer

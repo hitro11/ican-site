@@ -21,8 +21,8 @@
     <label for="inputMsg">Message</label>
     <textarea class="form-control" id="inputMsg" rows="7" aria-describedby="messageHelp" placeholder="Message" required></textarea> 
   </div>
-  <div class="btn-container">
-      <button type="submit" id="submit" class="btn btn-block btn-primary">Submit</button>	
+  <div class="btn-container center">
+      <button type="submit" id="submit" class="btn btn-primary btn-submit">Submit</button>	
     </div>
   </form>  
 </div>
