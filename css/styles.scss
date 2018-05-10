@@ -31,9 +31,26 @@ h1,h2,h3,h4,h5,h6,p {
   justify-content: center;
 }
 
-.form-row-around {
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-between {
   display: flex;
   justify-content: space-between;
+  margin: 0.5em 2em;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.5em 2em;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
   margin: 0.5em 2em;
 }
 
@@ -226,7 +243,7 @@ hr {
   flex: 0 0 45%;
 }
 
-.left-attach {
+.right-attach {
   margin-right: 0;
 }
 
@@ -261,6 +278,7 @@ form {
   .form-heading {
     font-size: 2em;
     background: wheat;
+    padding: 0.2em;
   }
   
   input.form-control-sm {
@@ -280,7 +298,7 @@ footer {
   }
 
   p {
-    transform: scale(0.7);
+    font-size: 0.7em;
   }
 }
 

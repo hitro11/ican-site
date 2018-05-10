@@ -6,19 +6,15 @@
 <div class="center">
 <form class="card">
   <div class="form-group">
-    <label for="inputName">Name</label>
     <input type="name" class="form-control" id="inputName" aria-describedby="nameHelp" placeholder="Name" required>
   </div>
   <div class="form-group">
-    <label for="inputEmail1">Email address</label>
     <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Email" required>
   </div>
   <div class="form-group">
-    <label for="inputSubject">Subject</label>
     <input type="text" class="form-control" id="inputSubject" aria-describedby="subjectHelp" placeholder="Subject" required>
   </div>
   <div class="form-group">
-    <label for="inputMsg">Message</label>
     <textarea class="form-control" id="inputMsg" rows="7" aria-describedby="messageHelp" placeholder="Message" required></textarea> 
   </div>
   <div class="btn-container center">
@@ -29,7 +25,7 @@
 
 
 <div class="flex-container">  
-  <div class="card flex-item left-attach">
+  <div class="card flex-item right-attach">
     <h4>Corporate Office</h4> </br>
     <p>
       1055 Canadian Place, Unit 11</br>
@@ -48,10 +44,10 @@
   </div>
 </div> 
 
-<h2 class="text-center">Other Offices</h2>
+<h2 class="text-center">Other Locations</h2>
 
   <div class="flex-container">
-    <div class="card flex-item">
+    <div class="flex-item">
       <h4>India Office (Kareer Krafters India Pvt. Ltd.)</h4> <br>
       <p>
         405/ B Vertax Vikas, M.V. Road</br>
@@ -64,7 +60,7 @@
       </p>   
     </div>
 
-    <div class="card flex-item">
+    <div class="flex-item">
       <h4>Pakistan Office (Bilal Ali-Bokhari)</h4> <br>
       <p>
         APT #1A, 455A Adra Colony,Tench Road</br>
@@ -77,7 +73,7 @@
       </p>   
     </div>
 
-    <div class="card flex-item">
+    <div class="flex-item">
       <h4>Toronto Office</h4> <br>
       <p>
         150 Ferrand Drive, Suite 1501</br>
