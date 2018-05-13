@@ -3,7 +3,7 @@
 
 
 
-    <img class="hero" src="../assets/home_bg2.jpg" alt="">    
+    <img class="hero" src="../assets/home_bg3.jpg" alt="">    
 
 
   <div class="call-to-action">

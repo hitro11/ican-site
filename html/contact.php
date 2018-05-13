@@ -1,52 +1,56 @@
 
 <?php echo file_get_contents("./header.html"); ?>
 
-<h1 class="text-center">Get in Touch</h1>
+<h1 class="text-center">Contact Us</h1>
 
-<div class="center">
-<form class="card">
-  <div class="form-group">
-    <input type="name" class="form-control" id="inputName" aria-describedby="nameHelp" placeholder="Name" required>
+<div class="flex-container-contact">  
+
+  <div class="card flex-item flex-container corp">
+
+    <div class="corp flex-item-2">
+      <h4>Corporate Office</h4> </br>
+      <p>
+        1055 Canadian Place, Unit 11</br>
+        Mississauga, ON. </br>
+        L4W 0C2 </br>
+        Canada
+      </p>
+      <p>
+        <i class="fas fa-phone contact-icon"></i> 905­-­625-9933</br>
+        <i class="fas fa-envelope contact-icon"></i> info@icaninc.ca</br> 
+        <i class="fas fa-fax contact-icon"></i> 905­-­625-9902</br>
+      </p>   
+    </div> 
+
+    <div id="map" class="flex-item"> </div>     
+
   </div>
-  <div class="form-group">
-    <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Email" required>
-  </div>
-  <div class="form-group">
-    <input type="text" class="form-control" id="inputSubject" aria-describedby="subjectHelp" placeholder="Subject" required>
-  </div>
-  <div class="form-group">
-    <textarea class="form-control" id="inputMsg" rows="7" aria-describedby="messageHelp" placeholder="Message" required></textarea> 
-  </div>
-  <div class="btn-container center">
-      <button type="submit" id="submit" class="btn btn-primary btn-submit">Submit</button>	
+
+  <form class="card flex-item-2">
+    <div class="form-group">
+      <input type="name" class="form-control" id="inputName" aria-describedby="nameHelp" placeholder="Name" required>
     </div>
-  </form>  
-</div>
+    <div class="form-group">
+      <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Email" required>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" id="inputSubject" aria-describedby="subjectHelp" placeholder="Subject" required>
+    </div>
+    <div class="form-group">
+      <textarea class="form-control" id="inputMsg" rows="7" aria-describedby="messageHelp" placeholder="Message" required></textarea> 
+    </div>
+    <div class="btn-container center">
+        <button type="submit" id="submit" class="btn btn-primary btn-submit">Submit</button>	
+      </div>
+  </form>   
 
-
-<div class="flex-container">  
-  <div class="card flex-item right-attach">
-    <h4>Corporate Office</h4> </br>
-    <p>
-      1055 Canadian Place, Unit 11</br>
-      Mississauga, ON. </br>
-      L4W 0C2 </br>
-      Canada
-    </p>
-    <p>
-      <i class="fas fa-phone contact-icon"></i> 905­-­625-9933</br>
-      <i class="fas fa-envelope contact-icon"></i> info@icaninc.ca</br> 
-      <i class="fas fa-fax contact-icon"></i> 905­-­625-9902</br>
-    </p>   
-  </div>  
-
-  <div id="map" class="card">    
-  </div>
 </div> 
+
+  
 
 <h2 class="text-center">Other Locations</h2>
 
-  <div class="flex-container">
+  <div class="flex-container-contact">
     <div class="flex-item">
       <h4>India Office (Kareer Krafters India Pvt. Ltd.)</h4> <br>
       <p>
