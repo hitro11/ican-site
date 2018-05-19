@@ -1,7 +1,7 @@
 
 <?php echo file_get_contents("./header.html"); ?>
 
-<h1 class="text-center">Independent Class Assessment</h1>
+<h1 class="text-center page-title">Independent Class Assessment Form</h1>
 <div class="center">
   <form action="" class="card">
   <h4 class="form-heading">Details of Principal Applicant</h4> 

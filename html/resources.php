@@ -1,7 +1,7 @@
 <?php echo file_get_contents("./header.html"); ?>
 
 <div class="res-sec">
-  <h1 class="text-center">FAQ</h1>
+  <h1 class="text-center page-title">FAQ</h1>
   <div class="res-mini-sec">
     <h5 class="col-pri">What is a Canadian Immigrant Visa?</h5>
     <p>
@@ -103,7 +103,7 @@
 </div>
 
 <div class="res-sec">
-  <h1 class="text-center">Links & Resources</h1>
+  <h1 class="text-center page-title">Links & Resources</h1>
   <div class="res-mini-sec">
     <p>Some of the social assistance programmes that every Permanent Resident is eligible for are as 
       follows, please see the link to the government websites for updated and detailed 
