@@ -2,9 +2,32 @@
 
 <h1 class="text-center page-title">Contact Us</h1>
 
+<div class="center">
+  <form action="" class="card contact-form">
+    <div class="form-group">
+      <label for="name">Name <span class="col-pri">*</span></label>
+      <input type="name" class="form-control" name="name" id="name" aria-describedby="nameHelp" placeholder="Name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email <span class="col-pri">*</span></label>
+      <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Email" required>
+    </div>
+    <div class="form-group">
+      <label for="subject">Subject <span class="col-pri">*</span></label>
+      <input type="text" class="form-control" name="subject" id="subject" aria-describedby="subjectHelp" placeholder="Subject" required>
+    </div>
+    <div class="form-group">
+      <label for="msg">Message <span class="col-pri">*</span></label>
+      <textarea class="form-control" name="msg" id="msg" rows="5" placeholder="Message"></textarea>
+    </div>
+    <div class="center btn-form">
+      <button type="submit" id="submit" class="btn btn-primary btn-submit">Submit</button>	
+    </div>
+  </form>   
+</div>
+
 <div class="flex-container-contact">
-  
-  <div class="flex-item-2"> 
+  <div class="flex-item-2 contact-card"> 
     <h4>Head Office</h4> </br>
     <p>
       1055 Canadian Place, Unit 11</br>
@@ -12,71 +35,52 @@
       L4W 0C2 </br>
       Canada
     </p>
-    <i class="fas fa-phone contact-icon"></i> 905­-­625-9933</br>
-    <i class="fas fa-envelope contact-icon"></i> info@icaninc.ca</br> 
-    <i class="fas fa-fax contact-icon"></i> 905­-­625-9902</br>   
+    <i data-feather="phone"></i> 905­-­625-9933 <br>
+    <i data-feather="mail"></i> info@icaninc.ca 
   </div>
 
   <div class="flex-item" id="map"></div>
 
-  <div class="flex-item">
-    <form action="" class="card">
-      <div class="form-group">
-        <input type="name" class="form-control" name="name" id="name" aria-describedby="nameHelp" placeholder="Name" required>
-      </div>
-      <div class="form-group">
-        <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Email" required>
-      </div>
-      <div class="form-group">
-        <input type="text" class="form-control" name="subject" id="subject" aria-describedby="subjectHelp" placeholder="Subject" required>
-      </div>
-      <div class="form-group">
-        <textarea class="form-control" name="msg" id="msg" rows="5" placeholder="Message"></textarea>
-      </div>
-    </form>    
-  </div>
 </div> 
 
   
-<h2 class="text-center">Other Locations</h2>
+<h2 class="text-center grey">Other Locations</h2>
 
   <div class="flex-container-contact">
     <div class="flex-item">
-      <h4>India Office (Kareer Krafters India Pvt. Ltd.)</h4> <br>
+      <h4>Kareer Krafters India Pvt. Ltd.</h4> <br>
       <p>
         405/ B Vertax Vikas, M.V. Road</br>
         Andheri (E) </br>
         Mumbai, Maharashtra-400 069 </br>
       </p>
       <p>
-        <i class="fas fa-phone contact-icon"></i> 91-222-684-2210 </br>
-        <i class="fas fa-phone contact-icon"></i> 91-222-684-2728 </br> 
+        <i data-feather="phone"></i> 91-222-684-2210 </br>
+        <i data-feather="phone"></i> 91-222-684-2728 </br> 
       </p>   
     </div>
 
     <div class="flex-item">
-      <h4>Pakistan Office (Bilal Ali-Bokhari)</h4> <br>
+      <h4>Bilal Ali-Bokhari</h4> <br>
       <p>
         APT #1A, 455A Adra Colony,Tench Road</br>
         Rawalpindi, Lahore </br>
       </p>
       <p>
-        <i class="fas fa-phone contact-icon"></i> +92­-­51­-­5524923</br>
-        <i class="fas fa-mobile contact-icon"></i> 0300­-­8557494</br> 
-        <i class="fas fa-fax contact-icon"></i> +92-51-5584522</br>
+        <i data-feather="phone"></i> +92­-­51­-­5524923</br>
+        <i data-feather="smartphone"></i></i> 0300­-­8557494</br> 
       </p>   
     </div>
 
     <div class="flex-item">
       <h4>Toronto Office</h4> <br>
       <p>
-        150 Ferrand Drive, Suite 1501</br>
-        Toronto, ON. </br>
-        M3C 3E5 </br>
-        Canada    
+        150 Ferrand Drive, Suite 1501 </br>
+        Toronto, ON </br>
+        M3C 3E5 </br> 
       </p>
       <p>
-        <i class="fas fa-phone contact-icon"></i> 905-625-9933</br>
+        <i data-feather="phone"></i> 905-625-9933</br>
       </p>   
     </div>
   </div>

@@ -7,19 +7,21 @@ html, body {
   overflow-y: initial;
 }
 
-.main {
-  margin: 4em 2em 2em 2em;
-}
-
 h1, h2, h3, h4, h5, h6, p {
   font-family: "Roboto", sans-serif;
-  color: #474747;
+  color: #444444;
 }
 
 .page-title {
-  background: whitesmoke;
+  font-size: 3em;
   margin-bottom: 1em;
+  margin-top: 2em;
   padding: 0.3em;
+}
+
+.grey {
+  background: whitesmoke;
+  padding: 0.2em 0;
 }
 
 .container-txt {
@@ -75,8 +77,14 @@ h1, h2, h3, h4, h5, h6, p {
   color: white;
 }
 
+.feather {
+  margin-right: 1em;
+  margin-top: 0.2em;
+  padding-top: 0.2em;
+}
+
 .navbar {
-  background-color: #2d2d2d !important;
+  background-color: black;
 }
 .navbar .active {
   font-weight: bold;
@@ -94,28 +102,45 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0;
 }
 
+.home2 {
+  position: static;
+  margin-top: 21%;
+  padding: 5%;
+  background-color: #8e1414;
+}
+.home2 h1, .home2 h2, .home2 h3, .home2 h4, .home2 h5, .home2 h6, .home2 p {
+  color: white;
+}
+
+.flex-item-home {
+  flex: 0 0 30%;
+}
+
 .hero {
   width: 100vw;
   height: 110vh;
   margin: 66px 0 0 0;
-  filter: brightness(14%);
+  filter: brightness(22%);
   position: relative;
   z-index: -1;
 }
 
 .call-to-action {
   display: flex;
-  margin-top: -75vh;
+  margin-top: -92vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.call-to-action a {
+  transform: scale(1.3);
 }
 .call-to-action h1 {
   color: whitesmoke;
   margin: 0 0 1.3em 0;
 }
 .call-to-action .home-title {
-  font-size: 5em;
+  font-size: 8em;
   margin: 0 0 0.1em 0;
 }
 
@@ -166,21 +191,16 @@ h1, h2, h3, h4, h5, h6, p {
   width: 30%;
 }
 
-.home2 {
-  position: static;
-  margin-top: 27%;
-  margin-bottom: 3em;
-}
-
-.flex-item-home {
-  flex: 0 0 30%;
-}
-
 .card {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.3), 0 10px 10px rgba(0, 0, 0, 0.35);
   background: whitesmoke;
   padding: 1em;
   margin: 0 1em 1em 1em;
+}
+
+.contact-card {
+  background: whitesmoke;
+  padding: 1em;
 }
 
 .home-card {
@@ -192,7 +212,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 hr {
-  border-color: #2d2d2d;
+  border-color: #1b131f;
   width: 100%;
 }
 
@@ -205,9 +225,8 @@ hr {
 
 .flex-container-contact {
   display: flex;
-  justify-content: space-evenly;
-  margin: 5em 0 5em 0;
-  padding: 1em;
+  justify-content: space-around;
+  margin: 5em 14em;
 }
 
 .flex-container-col {
@@ -223,7 +242,7 @@ hr {
 }
 
 .flex-item-2 {
-  flex: 0 0 35%;
+  flex: 0 0 25%;
 }
 
 .left-attach {
@@ -241,10 +260,7 @@ hr {
 }
 
 #map {
-  margin-left: -24em !important;
-  margin-right: 4em;
   max-width: 100%;
-  padding: 1em;
 }
 
 .contact-icon {
@@ -254,7 +270,7 @@ hr {
 
 form {
   padding: 2em !important;
-  margin: 1em 0 6em 0 !important;
+  margin: 0;
 }
 form .space-top {
   margin-top: 2em;
@@ -277,6 +293,10 @@ form input.form-control-sm {
 }
 form .btn-form {
   margin-top: 2em;
+}
+
+.contact-form {
+  width: 50%;
 }
 
 .form-mini {
@@ -303,38 +323,57 @@ form .btn-form {
 }
 
 footer {
-  background: #2d2d2d;
-  box-shadow: 0 55vh 0 55vh #2d2d2d;
-  padding: 1em;
+  padding: 2em 2em 0 2em;
 }
-footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer p {
-  color: white;
+footer .maintain {
+  font-size: 0.8em;
 }
 footer .copyright {
   font-size: 0.7em;
-  margin-top: 1em;
 }
 
 .footer-flex-container {
-  padding-top: 3em;
-  margin-bottom: 2em;
-  height: 650px;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: center;
+}
+.footer-flex-container .footer-adr-sec {
+  margin-top: 1.5em;
+}
+.footer-flex-container .footer-adr-sec .line {
+  margin-top: 0.5em;
+}
+.footer-flex-container .footer-soc-sec {
+  margin-top: 2.5em;
+}
+.footer-flex-container .footer-soc-sec .feather {
+  stroke: #8e1414;
+  padding-top: 0;
+}
+.footer-flex-container .footer-soc-sec .feather:hover {
+  fill: #8e1414;
+}
+.footer-flex-container .footer-soc-sec .social {
+  transform: scale(1.2);
 }
 .footer-flex-container .footer-item {
-  height: 250px;
+  height: 20em;
+}
+.footer-flex-container .footer-item span {
+  max-width: 20%;
 }
 .footer-flex-container .footer-img {
-  max-width: 33%;
-  max-height: 33%;
-  margin: 1em;
+  max-height: 40%;
+  margin: 0.3em;
 }
 .footer-flex-container .flex-container-wrap {
   flex-flow: row wrap;
 }
 
-.footer-contact h1, .footer-contact h2, .footer-contact h3, .footer-contact h4, .footer-contact h5, .footer-contact h6, .footer-contact p, .footer-contact i {
-  font-size: 0.85em;
+.footer-contact p, .footer-contact i {
+  margin: 0 0.5em 0 0;
+}
+
+.footer-link {
+  margin: 0 0.5em;
 }
