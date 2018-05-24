@@ -3,7 +3,7 @@
 
 <h1 class="text-center page-title">Independent Class Assessment Form</h1>
 <div class="center">
-  <form action="" class="card">
+  <form action="" class="card form-asse" method="post">
   <h4 class="form-heading">Details of Principal Applicant</h4> 
 
   <div class="form-mini">
@@ -444,15 +444,14 @@
     </div>    
   </div>
 
+  <div class="g-recaptcha" data-sitekey="6LckG1sUAAAAAF7gYPSiA335pbwXBznJAI87HkD3"></div>
+
   <div class="center btn-form">
     <button type="submit" id="submit" class="btn btn-primary btn-submit">Submit</button>	
   </div>
 </form>
   
 </div>
-
-
-
 
 
 <?php echo file_get_contents("./footer.html"); ?>
