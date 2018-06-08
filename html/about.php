@@ -1,9 +1,8 @@
 <?php echo file_get_contents("./header.html"); ?>
 
+<h1 class="page-title text-center">About Us</h1>
+
 <div class="text">
-
-  <h1 class="page-title text-center">About Us</h1>
-
   <p>
   ICAN Inc. is a leading professional progressive and personalized immigration consulting firm in Canada. Our team 
   of legal professionals are duly licensed with years of glowing experience and an enviable reputation. Personalized 
@@ -35,7 +34,7 @@
     life and countries who want to make Canada their home. Your success and adaptability are the key to our success.
     We will assess your qualification for immigration to Canada free of cost. Once a positive eligibility is confirmed
     we will provide you with a detailed breakdown of our fees and services, and answer all your queries via e-mail and
-    telephone within twenty-four hours from the time of receipt.Your application will be researched in depth and 
+    telephone within twenty-four hours from the time of receipt. Your application will be researched in depth and 
     presented in a most comprehensive and professional manner. We take pride in our 100% refund policy in cases where 
     visas are not approved (excepting in cases where criminal, misleading or health information was incorrectly 
     given to us). Please take the time to fill out our free on-line assessment form at no obligation. If your 
@@ -45,7 +44,7 @@
 
   <p>
   Retaining a reputed licenced Immigration Consultancy firm can accelerate your chances of successful immigration
-  and a new beginning. Our services will save you considerable time and effort .Discover if you qualify by simply 
+  and a new beginning. Our services will save you considerable time and effort. Discover if you qualify by simply 
   completing our <a class="col-pri" href="./assessment.php">online assessment form</a>.
   </p>
 

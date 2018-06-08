@@ -21,7 +21,7 @@
       <textarea class="form-control" name="msg" id="msg" rows="5" placeholder="Message"></textarea>
     </div>
 
-    <div class="g-recaptcha" data-sitekey="6LckG1sUAAAAAF7gYPSiA335pbwXBznJAI87HkD3"></div>
+    <div class="center g-recaptcha" data-sitekey="6LckG1sUAAAAAF7gYPSiA335pbwXBznJAI87HkD3"></div>
 
     <div class="center btn-form">
       <button type="submit" id="submit" class="btn btn-primary btn-submit">Submit</button>	

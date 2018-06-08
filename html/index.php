@@ -10,20 +10,16 @@
 </div>
 
 <div class="home2">
-  <div class="left home-sec home-sec-left">
-    <div>
-      <h1 class="">We have helped clients from over 55 countries come to Canada</h1>      
-      <div class=""><a href="./about.php" class="btn btn-home2">Learn More</a></div> 
-    </div>
+  <div class="home-sec">
+    <h1 class="">We have helped clients from over 55 countries come to Canada</h1>      
+    <div class=""><a href="./about.php" class="btn btn-home2">Learn More</a></div> 
+  </div>
 
-    <h1>prompt2</h1>
-    <!-- <img class="right home2-img" width="600" height="400" src="../assets/globe.jpg" alt=""> -->
+  <div class="home-sec">
+    <h1 class="">We have helped clients from over 55 countries come to Canada</h1>      
+    <div class=""><a href="./about.php" class="btn btn-home2">Learn More</a></div> 
   </div>  
-
-  
 </div>
-
-
 
 <?php echo file_get_contents("./footer.html"); ?>
   
