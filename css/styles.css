@@ -469,13 +469,18 @@ ul li {
     font-size: 4em;
   }
   .call-to-action h1 {
-    font-size: 1em;
+    font-size: 0.9em;
   }
 
   a.btn-hero {
     width: 60%;
     font-size: 0.9em;
     transform: scale(1);
+  }
+
+  .home2 {
+    width: 100vw;
+    margin-left: -1em;
   }
 
   .home-sec {
@@ -529,35 +534,27 @@ ul li {
     margin-bottom: 3em;
   }
 
+  footer {
+    padding-top: 0;
+  }
+  footer .footer-flex-container {
+    margin-top: 4em;
+    display: inline-block;
+  }
+  footer .footer-flex-container .footer-adr-sec {
+    margin-top: 1.5em;
+  }
+  footer .footer-flex-container .footer-adr-sec .line {
+    margin-top: 0.5em;
+  }
+  footer .footer-flex-container .footer-img {
+    max-height: 30%;
+  }
+
   .copyright {
     margin-top: -5em;
   }
   .copyright p {
-    font-size: 0.6em;
-  }
-
-  .footer-flex-container {
-    margin-top: 4em;
-    display: inline-block;
-  }
-  .footer-flex-container .footer-adr-sec {
-    margin-top: 1.5em;
-  }
-  .footer-flex-container .footer-adr-sec .line {
-    margin-top: 0.5em;
-  }
-  .footer-flex-container .footer-soc-sec {
-    margin-top: 2.5em;
-  }
-  .footer-flex-container .footer-soc-sec .feather {
-    stroke: #8e1414;
-    padding-top: 0;
-    margin-right: 1em;
-  }
-  .footer-flex-container .footer-soc-sec .feather:hover {
-    fill: #8e1414;
-  }
-  .footer-flex-container .footer-img {
-    max-height: 30%;
+    font-size: 0.75em;
   }
 }
