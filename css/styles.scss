@@ -132,8 +132,10 @@ h1,h2,h3,h4,h5,h6,p,a {
 .home2 {
   position: static;
   margin-top: 28%;
+  margin-left: -1.5em;
   padding: 2% 6%;
   background-color: $col-pri-darker;
+  width: 105vw;
 
   h1,h2,h3,h4,h5,h6,p,li {
     color: whitesmoke;
@@ -150,9 +152,9 @@ h1,h2,h3,h4,h5,h6,p,a {
 
 
 .hero {
-  width: 100vw;
+  width: 105vw;
   height: 110vh;
-  margin: 2em 0 0 0; 
+  margin: 2em 0 0 -1.5em; 
   filter: brightness(45%);
   position: relative;
   z-index: -1;
@@ -416,8 +418,6 @@ form {
 }
 
 
-
-
 .res-mini-sec, 
 .con-mini {
   margin-bottom: 3em;
@@ -434,8 +434,6 @@ form {
     margin-bottom: 0.5em;
   }
 }
-
-
 
 
 //footer
@@ -644,6 +642,10 @@ ul li {
     .footer-flex-container {
       margin-top: 4em;  
       display: inline-block;
+
+      .footer-item {
+        height: 6em;
+      }
     
       .footer-adr-sec {
         margin-top: 1.5em;
@@ -652,10 +654,12 @@ ul li {
           margin-top: 0.5em;
         }
       }
-    
-      .footer-img {
-        max-height: 30%;
-      } 
+
+      #footer-img-3 {
+        margin-left: -0.4em;
+      }
+
+     
     }
   }
 

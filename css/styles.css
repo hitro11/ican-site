@@ -115,8 +115,10 @@ h1, h2, h3, h4, h5, h6, p, a {
 .home2 {
   position: static;
   margin-top: 28%;
+  margin-left: -1.5em;
   padding: 2% 6%;
   background-color: #8e1414;
+  width: 105vw;
 }
 .home2 h1, .home2 h2, .home2 h3, .home2 h4, .home2 h5, .home2 h6, .home2 p, .home2 li {
   color: whitesmoke;
@@ -131,9 +133,9 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .hero {
-  width: 100vw;
+  width: 105vw;
   height: 110vh;
-  margin: 2em 0 0 0;
+  margin: 2em 0 0 -1.5em;
   filter: brightness(45%);
   position: relative;
   z-index: -1;
@@ -541,14 +543,17 @@ ul li {
     margin-top: 4em;
     display: inline-block;
   }
+  footer .footer-flex-container .footer-item {
+    height: 6em;
+  }
   footer .footer-flex-container .footer-adr-sec {
     margin-top: 1.5em;
   }
   footer .footer-flex-container .footer-adr-sec .line {
     margin-top: 0.5em;
   }
-  footer .footer-flex-container .footer-img {
-    max-height: 30%;
+  footer .footer-flex-container #footer-img-3 {
+    margin-left: -0.4em;
   }
 
   .copyright {
