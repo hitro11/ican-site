@@ -1,5 +1,8 @@
+//imports
+
+
 //variables
-$col-pri: #e02828;
+$col-pri: #ff3300;
 $col-pri-dark: darken($col-pri, 10%);
 $col-pri-darker: darken($col-pri, 20%);
 $col-text: #000000;
@@ -122,6 +125,9 @@ h1,h2,h3,h4,h5,h6,p,a {
   }
 }
 
+img.burger-menu {
+  color: $col-pri;
+}
 
 //home styles
 .home {
@@ -542,9 +548,9 @@ ul li {
 
 /////////////////////////////////////////////////////////////////////////////////////////
 //phones
-@media only screen and (min-width: 300px) and (max-width: 479px) {
+@media only screen and (min-width: 299px) and (max-width: 479px) {
   h1,h2,h3,h4,h5,h6,p,i {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 
   .hero {
@@ -552,9 +558,7 @@ ul li {
     margin-left: -1em;
   }
 
- 
   .call-to-action {
-
     .home-title {
       font-size: 4em;
     }
@@ -565,7 +569,7 @@ ul li {
   }
 
   a.btn-hero {
-    width: 60%;
+    width: 70%;
     font-size: 0.9em;
     transform: scale(1);
   }
@@ -632,6 +636,42 @@ ul li {
 
   .card {
     margin-bottom: 3em;
+  }
+
+  //services-page 
+  .services-block {
+    margin: 2em 0;
+    h4 {
+      font-size: 1.5em;
+    }
+
+    p, li {
+      font-size: 0.85em;
+      margin: 1em 0 0 0;
+    }
+
+    li {
+      margin-left: 3.5em;
+    }
+
+    h4,p {
+      margin-left: 0.5em;
+    }
+  }
+
+  //resources-page
+  .res-sec {
+    margin-bottom: 0;
+  }
+
+  .res-mini-sec {
+    h5 {
+      font-size: 1.25em;
+    }
+
+    p {
+      font-size: 0.75em;
+    }
   }
 
 

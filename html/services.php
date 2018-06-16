@@ -48,7 +48,7 @@
 </div>
 
 <div class="services-block">
-  <h5 class="col-pri-dark">We also provide services for: </h5>
+  <h4 class="col-pri-dark">We also provide services for: </h4>
   <ul class="list-group">
     <li class="">Sponsorship Appeals</li>
     <li class="">Removal Order Appeals</li>

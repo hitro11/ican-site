@@ -1,7 +1,7 @@
 
 <?php echo file_get_contents("./header.html"); ?>
 
-<img class="hero tint" src="../assets/home_bg6.jpg" alt="">    
+<img class="hero tint" src="../assets/home_bg.jpg" alt="">    
 
 <div class="call-to-action">
   <h1 class="home-title text-center">ICAN</h1>

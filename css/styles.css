@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   margin-top: 2em;
   padding: 0.3em;
   background: whitesmoke;
-  color: #ba1b1b;
+  color: #cc2900;
 }
 
 .text {
@@ -69,18 +69,18 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .col-pri {
-  color: #e02828;
+  color: #ff3300;
 }
 .col-pri:hover, .col-pri:focus, .col-pri:active {
-  color: #e02828;
+  color: #ff3300;
 }
 
 .col-pri-darker {
-  color: #8e1414;
+  color: #991f00;
 }
 
 .col-pri-dark {
-  color: #ba1b1b;
+  color: #cc2900;
 }
 
 .col-white {
@@ -101,10 +101,14 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .nav-item {
-  color: #e02828;
+  color: #ff3300;
 }
 .nav-item:hover {
-  color: #ed8181;
+  color: #ff8566;
+}
+
+img.burger-menu {
+  color: #ff3300;
 }
 
 .home {
@@ -117,7 +121,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   margin-top: 28%;
   margin-left: -1.5em;
   padding: 2% 6%;
-  background-color: #8e1414;
+  background-color: #991f00;
   width: 105vw;
 }
 .home2 h1, .home2 h2, .home2 h3, .home2 h4, .home2 h5, .home2 h6, .home2 p, .home2 li {
@@ -158,11 +162,11 @@ h1, h2, h3, h4, h5, h6, p, a {
 .call-to-action .home-title {
   font-size: 8em;
   margin: 0 0 0.1em 0;
-  color: #e02828;
+  color: #ff3300;
 }
 
 .tint {
-  background-color: #8e1414;
+  background-color: #991f00;
   background-blend-mode: multiply;
 }
 
@@ -185,35 +189,35 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .btn-primary {
   color: white;
-  background: #8e1414;
+  background: #991f00;
   border: none;
   outline: 0;
 }
 .btn-primary:hover, .btn-primary:active {
-  background: #ba1b1b !important;
+  background: #cc2900 !important;
   border: 0 !important;
   outline: 0 !important;
 }
 .btn-primary:focus {
-  background: #e02828 !important;
+  background: #ff3300 !important;
   box-shadow: none !important;
 }
 
 .btn-home2 {
-  color: #ba1b1b;
+  color: #cc2900;
   background: whitesmoke;
   border: none;
   outline: 0;
   margin-top: 0.5em;
 }
 .btn-home2:hover, .btn-home2:active {
-  color: #ba1b1b !important;
+  color: #cc2900 !important;
   background: white !important;
   border: 0 !important;
   outline: 0 !important;
 }
 .btn-home2:focus {
-  color: #ba1b1b !important;
+  color: #cc2900 !important;
   background: white !important;
   box-shadow: none !important;
 }
@@ -245,11 +249,11 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .home-card {
-  border: 1px solid #ba1b1b;
+  border: 1px solid #cc2900;
 }
 
 .card-title {
-  color: #8e1414;
+  color: #991f00;
 }
 
 hr {
@@ -329,7 +333,7 @@ form .space-top {
   margin-top: 2em;
 }
 form h4 {
-  color: #ba1b1b;
+  color: #cc2900;
   margin: 0.4em 0;
 }
 form h1 {
@@ -338,7 +342,7 @@ form h1 {
 form .form-heading {
   font-size: 2em;
   background: white;
-  color: #ba1b1b;
+  color: #cc2900;
   padding: 0.2em;
 }
 form input.form-control-sm {
@@ -405,12 +409,12 @@ footer .copyright {
   margin-top: 2.5em;
 }
 .footer-flex-container .footer-soc-sec .feather {
-  stroke: #8e1414;
+  stroke: #991f00;
   padding-top: 0;
   margin-right: 1em;
 }
 .footer-flex-container .footer-soc-sec .feather:hover {
-  fill: #8e1414;
+  fill: #991f00;
 }
 .footer-flex-container .footer-soc-sec .social {
   transform: scale(1.2);
@@ -457,9 +461,9 @@ ul li {
   margin: 0.5em 0 0.5em 2em;
 }
 
-@media only screen and (min-width: 300px) and (max-width: 479px) {
+@media only screen and (min-width: 299px) and (max-width: 479px) {
   h1, h2, h3, h4, h5, h6, p, i {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 
   .hero {
@@ -475,7 +479,7 @@ ul li {
   }
 
   a.btn-hero {
-    width: 60%;
+    width: 70%;
     font-size: 0.9em;
     transform: scale(1);
   }
@@ -536,6 +540,34 @@ ul li {
     margin-bottom: 3em;
   }
 
+  .services-block {
+    margin: 2em 0;
+  }
+  .services-block h4 {
+    font-size: 1.5em;
+  }
+  .services-block p, .services-block li {
+    font-size: 0.85em;
+    margin: 1em 0 0 0;
+  }
+  .services-block li {
+    margin-left: 3.5em;
+  }
+  .services-block h4, .services-block p {
+    margin-left: 0.5em;
+  }
+
+  .res-sec {
+    margin-bottom: 0;
+  }
+
+  .res-mini-sec h5 {
+    font-size: 1.25em;
+  }
+  .res-mini-sec p {
+    font-size: 0.75em;
+  }
+
   footer {
     padding-top: 0;
   }
@@ -563,3 +595,5 @@ ul li {
     font-size: 0.75em;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */
