@@ -2,7 +2,7 @@
 
 
 //variables
-$col-pri: #ff3300;
+$col-pri: desaturate(#ff3300, 10%);
 $col-pri-dark: darken($col-pri, 10%);
 $col-pri-darker: darken($col-pri, 20%);
 $col-text: #000000;
@@ -27,11 +27,13 @@ h1,h2,h3,h4,h5,h6,p,a {
 .page-title {
   font-size: 3em;
   margin-bottom: 1em;
-  margin-top: 2em;
-  padding: 0.3em;
-  background: whitesmoke;
-  color: $col-pri-dark;
+  margin-top: 1.5em;
+  padding: 0.45em;
+  color: whitesmoke;
+  background: rgb(185,34,34);
+  background: linear-gradient(90deg, darken($col-pri, 5%) 0%, darken($col-pri-dark, 5%) 50%, darken($col-pri-darker, 5%) 100%);
 }
+
 
 .text {
   padding: 2em 15em;
@@ -140,7 +142,7 @@ img.burger-menu {
   margin-top: 28%;
   margin-left: -1.5em;
   padding: 2% 6%;
-  background-color: $col-pri-darker;
+  background-color: desaturate($col-pri-darker, 15%);
   width: 105vw;
 
   h1,h2,h3,h4,h5,h6,p,li {
@@ -184,13 +186,8 @@ img.burger-menu {
   .home-title {
     font-size: 8em;
     margin: 0 0 0.1em 0;
-    color: $col-pri;
+    color: $col-pri-dark;
   }
-}
-
-.tint {
-  background-color: $col-pri-darker; // Tint color
-  background-blend-mode: multiply;
 }
 
 .home-sec {
@@ -418,9 +415,18 @@ form {
   margin-bottom: 2em;
 }
 
-.form-asse {
-  width: 60%;
+form.form-asse {
+  width: 45%;
   margin-bottom: 6em; 
+
+  .form-control {
+    width: 60% !important;
+    display: block;
+  }
+
+  #edu, #edu-spouse {
+    width: 100%;
+  }  
 }
 
 
@@ -525,18 +531,8 @@ footer {
 
 
 //services  
-.page-title {
-  font-size: 3em;
-  margin-bottom: 1em;
-  margin-top: 1.5em;
-  padding: 0.7em 0.3em;
-  color: whitesmoke;
-  background: rgb(185,34,34);
-  background: linear-gradient(90deg, rgba(186,33,33,1) 0%, rgba(138,25,25,1) 50%, rgba(82,15,15,1) 100%);
-}
-
 .services-block {
-  margin: 4em 10em;
+  margin: 0 6em 4em 6em;
 }
 
 ul li {
@@ -547,10 +543,10 @@ ul li {
 
 
 /////////////////////////////////////////////////////////////////////////////////////////
-//phones
-@media only screen and (min-width: 299px) and (max-width: 479px) {
-  h1,h2,h3,h4,h5,h6,p,i {
-    font-size: 2em;
+//phones + tablets (portait)
+@media only screen and (min-width: 299px) and (max-width: 768px) {
+  h1,h2,h3,h4,h5,h6,p,i,li {
+    font-size: 2.5em;
   }
 
   .hero {
@@ -594,16 +590,12 @@ ul li {
   }
 
   .page-title {
-    margin-top: 3em;
-    padding: 0.2em;
-    font-size: 2em;
+    margin-top: 2.5em;
+    font-size: 2.5em;
   }
 
   .text {
     padding: 2em 1em;
-    p {
-      font-size: 0.8em;
-    }
   }
 
   //forms
@@ -638,6 +630,30 @@ ul li {
     margin-bottom: 3em;
   }
 
+  //assessment page 
+  form.form-asse {
+    width: 100%;
+    margin: 0 0 6em 0;
+    padding: 1em !important;
+
+    h1 {
+      font-size: 1.7em;
+    }
+
+    h4 {
+      font-size: 1.3em;
+    }
+
+    .form-control {
+      width: 100% !important;
+    }
+
+    div.form-inline {
+      display: block;
+    }
+
+  }
+
   //services-page 
   .services-block {
     margin: 2em 0;
@@ -657,6 +673,10 @@ ul li {
     h4,p {
       margin-left: 0.5em;
     }
+  }
+
+  .first-block {
+    margin-top: -1em;
   }
 
   //resources-page
@@ -710,4 +730,20 @@ ul li {
       font-size: 0.75em;
     }    
   }  
+}
+
+//tablets (portrait)
+@media only screen and (min-width: 769px) and (max-width: 1440px) {
+  .text {
+    padding: 2em 0;
+  }
+
+  form.form-asse, form.contact-form {
+    width: 75%;
+
+    .form-control {
+      width: 75%;
+    }
+
+  }
 }
