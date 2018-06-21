@@ -3,54 +3,52 @@
 
 <h1 class="text-center page-title">Independent Class Assessment Form</h1>
 <div class="center">
-  <form action="" class="card form-asse" method="post">
+  <form action="../scripts/asseFormEmail.php" class="card form-asse" method="post">
   <h4 class="form-heading">Details of Principal Applicant</h4> 
 
   <div class="form-mini">
     <h4>Personal Info</h4>
     <div class="form-group">
       <label for="firstName">First Name <span class="col-pri">*</span></label>
-      <input type="name" class="form-control" id="firstName" aria-describedby="firstNameHelp" placeholder="First Name" required>
+      <input name="firstName" type="name" class="form-control" id="firstName" aria-describedby="firstNameHelp" placeholder="First Name" >
     </div>
     <div class="form-group ">
       <label for="middleName">Middle Name</label>
-      <input type="name" class="form-control" id="middleName" aria-describedby="middleNameHelp" placeholder="Middle Name">
+      <input name="middleName" type="name" class="form-control" id="middleName" aria-describedby="middleNameHelp" placeholder="Middle Name">
     </div>
     <div class="form-group ">
       <label for="lastName">Last Name <span class="col-pri">*</span></label>
-      <input type="name" class="form-control" id="lastName" aria-describedby="lastNameHelp" placeholder="Last Name" required>
+      <input name="lastName" type="name" class="form-control" id="lastName" aria-describedby="lastNameHelp" placeholder="Last Name" >
     </div>
     <div class="form-group ">
       <label for="sex">Sex <span class="col-pri">*</span></label>
-      <select class="form-control" name="sex" id="sex" required>
+      <select name="sex" class="form-control" name="sex" id="sex" >
         <option value="-1" selected>Select sex</option>
-        <option value="m">Male</option>
-        <option value="f">Female</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
       </select>
     </div>
     <div class="form-group ">
       <label for="dob">Date of Birth <span class="col-pri">*</span></label>
-      <input type="text" class="form-control" id="dob" aria-describedby="dobHelp"  placeholder="DD/MM/YYYY" required 
+      <input type="text" class="form-control" id="dob" aria-describedby="dobHelp"  placeholder="DD/MM/YYYY"  
       pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])/(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])/(?:30))|(?:(?:0[13578]|1[02])-31))" title="Enter a date in this format YYYY/MM/DD">    
     </div>
 
     <div class="form-group">
       <label for="citizCountry">Country of citizenship <span class="col-pri">*</span></label>
-      <select name="citizCountry" id="citizCountry" required>
-              <option value="-1">Select Country</option>
-      </select>
+      <input name="citizCountry" class="form-control" type="text">
     </div>
     <div class="form-group ">
       <label for="maritalStat">Marital Status</label>
-      <select name="maritalStat" id="maritalStat" required>
+      <select name="maritalStat" id="maritalStat" >
         <option value="-1" selected>Select marital status</option>
-        <option value="nm">Never Married</option>
-        <option value="m">Married</option>
-        <option value="ds">Deceased Spouse</option>
-        <option value="ls">Legally Seperated</option>
-        <option value="am">Anulled Marriage</option>
-        <option value="d">Divorced</option>
-        <option value="cl">Common-Law Spouse</option>
+        <option value="Never Married">Never Married</option>
+        <option value="Married">Married</option>
+        <option value="Deceased Spouse">Deceased Spouse</option>
+        <option value="Legally Seperated">Legally Seperated</option>
+        <option value="Anulled Marriage">Anulled Marriage</option>
+        <option value="Divorced">Divorced</option>
+        <option value="Common-Law Spouse">Common-Law Spouse</option>
       </select>
     </div>
   </div>
@@ -71,7 +69,7 @@
     </div>
     <div class="form-group ">
       <label for="addrCountry">Country <span class="col-pri">*</span></label>
-      <select name="addrCountry" id="addrCountry" required>
+      <select name="addrCountry" id="addrCountry" >
         <option value="-1">Select Country</option>
       </select>
     </div>
@@ -89,7 +87,7 @@
     </div>
     <div class="form-group ">
       <label for="email">Email <span class="col-pri">*</span></label>
-      <input type="email" id="email" name="email" class="form-control" aria-describedby="emailHelp" placeholder="Email" required>
+      <input type="email" id="email" name="email" class="form-control" aria-describedby="emailHelp" placeholder="Email" >
     </div>
     <div class="form-group ">
       <label for="altEmail">Alternate Emai</label>
@@ -101,7 +99,7 @@
     <h4>Education</h4>
     <div class="form-group ">
       <label for="edu"> Highest Level of College/University Education Achieved <span class="col-pri">*</span></label>
-      <select name="edu" id="edu" required>
+      <select name="edu" id="edu" >
         <option value="-1" selected>-</option>
         <option value="hs">High School (Grade 12) Certificate</option>
         <option value="1d12">1 year diploma, trade certificate or apprenticeship & 12 years of study</option>
@@ -151,7 +149,7 @@
     <h4>Language Proficiency</h4>
     <div class="form-group ">
       <label for="ieltsListening">1st Language <span class="col-pri">*</span></label>
-      <select name="edu" id="edu" required>
+      <select name="edu" id="edu" >
         <option value="-1" selected>-</option>
         <option value="en">English</option>
         <option value="fr">French</option>
@@ -161,7 +159,7 @@
       <label for="">Proficiency in language 1 <span class="col-pri">*</span></label>
       <div class="form-group">
         <label for="lang1Listen">Listen</span></label>
-        <select name="lang1Listen" id="lang1Listen" required>
+        <select name="lang1Listen" id="lang1Listen" >
           <option value="-1" selected>-</option>
           <option value="4">High</option>
           <option value="3">Moderate</option>
@@ -171,7 +169,7 @@
       </div>
       <div class="form-group">
         <label for="lang1Speak">Speak</span></label>
-        <select name="lang1Speak" id="lang1Speak" required>
+        <select name="lang1Speak" id="lang1Speak" >
           <option value="-1" selected>-</option>
           <option value="4">High</option>
           <option value="3">Moderate</option>
@@ -181,7 +179,7 @@
       </div>
       <div class="form-group">
         <label for="lang1Write">Write</span></label>
-        <select name="lang1Write" id="lang1Write" required>
+        <select name="lang1Write" id="lang1Write" >
           <option value="-1" selected>-</option>
           <option value="4">High</option>
           <option value="3">Moderate</option>
@@ -191,7 +189,7 @@
       </div>
       <div class="form-group">
         <label for="lang1Read">Read</span></label>
-        <select name="lang1Read" id="lang1Read" required>
+        <select name="lang1Read" id="lang1Read" >
           <option value="-1" selected>-</option>
           <option value="4">High</option>
           <option value="3">Moderate</option>
@@ -205,7 +203,7 @@
       <label for="">Proficiency in language 2 <span class="col-pri">*</span></label>
       <div class="form-group">
         <label for="lang2Listen">Listen</span></label>
-        <select name="lang2Listen" id="lang2Listen" required>
+        <select name="lang2Listen" id="lang2Listen" >
           <option value="-1" selected>-</option>
           <option value="4">High</option>
           <option value="3">Moderate</option>
@@ -215,7 +213,7 @@
       </div>
       <div class="form-group">
         <label for="lang1Speak">Speak</span></label>
-        <select name="lang1Speak" id="lang1Speak" required>
+        <select name="lang1Speak" id="lang1Speak" >
           <option value="-1" selected>-</option>
           <option value="4">High</option>
           <option value="3">Moderate</option>
@@ -225,7 +223,7 @@
       </div>
       <div class="form-group">
         <label for="lang1Write">Write</span></label>
-        <select name="lang1Write" id="lang1Write" required>
+        <select name="lang1Write" id="lang1Write" >
           <option value="-1" selected>-</option>
           <option value="4">High</option>
           <option value="3">Moderate</option>
@@ -235,7 +233,7 @@
       </div>
       <div class="form-group">
         <label for="lang1Read">Read</span></label>
-        <select name="lang1Read" id="lang1Read" required>
+        <select name="lang1Read" id="lang1Read" >
           <option value="-1" selected>-</option>
           <option value="4">High</option>
           <option value="3">Moderate</option>
@@ -250,7 +248,7 @@
     <h4>Employment</h4>
     <div class="form-group ">
       <label for="employmentYears">Total years of full time employment <span class="col-pri">*</span></label>
-      <input type="number" class="form-control" id="employmentYears" aria-describedby="employmentYearsHelp" placeholder="" required>
+      <input type="number" class="form-control" id="employmentYears" aria-describedby="employmentYearsHelp" placeholder="" >
     </div>
     <div class="form-group ">
       <label for="currOcu">Current Occupation</label>
@@ -341,7 +339,7 @@
     <h4>Education</h4>
     <div class="form-group ">
       <label for="edu-spouse"> Highest Level of College/University Education Achieved <span class="col-pri">*</span></label>
-      <select name="edu-spouse" id="edu-spouse" required>
+      <select name="edu-spouse" id="edu-spouse" >
         <option value="-1" selected>-</option>
         <option value="hs">High School (Grade 12) Certificate</option>
         <option value="1d12">1 year diploma, trade certificate or apprenticeship & 12 years of study</option>

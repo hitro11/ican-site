@@ -93,22 +93,6 @@ img.burger-menu {
   margin: 0;
   padding: 0; }
 
-.home2 {
-  position: static;
-  margin-top: 28%;
-  margin-left: -1.5em;
-  padding: 2% 6%;
-  background-color: #862a13;
-  width: 105vw; }
-  .home2 h1, .home2 h2, .home2 h3, .home2 h4, .home2 h5, .home2 h6, .home2 p, .home2 li {
-    color: whitesmoke; }
-
-.home2-img {
-  margin-left: -5em; }
-
-.flex-item-home {
-  flex: 0 0 30%; }
-
 .hero {
   width: 105vw;
   height: 110vh;
@@ -133,11 +117,30 @@ img.burger-menu {
     margin: 0 0 0.1em 0;
     color: #c22f0a; }
 
-.home-sec {
-  margin: 2em; }
+.home2 {
+  position: static;
+  margin-top: 28%;
+  margin-left: -1.5em;
+  padding: 2% 6%;
+  background-color: #862a13;
+  width: 105vw; }
+  .home2 h1, .home2 h2, .home2 h3, .home2 h4, .home2 h5, .home2 h6, .home2 p, .home2 li {
+    color: whitesmoke; }
 
-.home-sec-left h1, .home-sec-left h4, .home-sec-left h5, .home-sec-left h6, .home-sec-left p {
-  max-width: 60%; }
+.home2-img {
+  margin-left: -5em; }
+
+.home2-title {
+  margin-bottom: 1em;
+  font-size: 1.9em; }
+
+.flex-container-home {
+  display: flex;
+  justify-content: center; }
+
+.flex-item-home {
+  padding: 2em 1em;
+  width: 50%; }
 
 .list {
   list-style-type: none;
@@ -307,11 +310,13 @@ footer {
   background: #e4e4e4;
   box-shadow: 0 55vh 0 55vh #e4e4e4;
   padding: 2em 2em 0 2em; }
-  footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer p, footer i {
+  footer .footer-contact p, footer .footer-contact i {
     color: black; }
   footer .copyright {
     font-size: 0.8em;
     margin: 0 0 0.3em 0; }
+    footer .copyright p {
+      color: black; }
 
 .footer-flex-container {
   margin-top: -1em;
