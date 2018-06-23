@@ -7,7 +7,7 @@ $col-pri-dark: darken($col-pri, 10%);
 $col-pri-darker: darken($col-pri, 20%);
 $col-text: #000000;
 $col-nav-bg:  #091318;
-$col-foot-bg: #e4e4e4;
+$col-foot-bg: rgb(156, 156, 156);
 
 
 html, body {
@@ -17,6 +17,11 @@ html, body {
   height: 100%;
   overflow-x: hidden;
   overflow-y: initial;
+}
+
+.whitesmoke {
+  background: whitesmoke;
+  margin: 0 -2em 0 -2em;
 }
 
 h1,h2,h3,h4,h5,h6,p,a {
@@ -36,7 +41,7 @@ h1,h2,h3,h4,h5,h6,p,a {
 
 
 .text {
-  padding: 2em 15em;
+  padding: 4em 13em;
 }
 
 .grey {
@@ -112,11 +117,15 @@ h1,h2,h3,h4,h5,h6,p,a {
 
 //nav stuff
 .navbar {
-  background-color: white;
+  background-color: whitesmoke;
 
   .active {
     font-weight: bold;
   }
+}
+
+.navbar-brand {
+  margin-right: 3em;
 }
 
 .nav-item {
@@ -172,32 +181,44 @@ img.burger-menu {
   position: static;
   margin-top: 28%;
   margin-left: -1.5em;
-  padding: 2% 6%;
-  background-color: desaturate($col-pri-darker, 15%);
+  padding: 2% 5%;
+  background-color: whitesmoke;
   width: 105vw;
 
   h1,h2,h3,h4,h5,h6,p,li {
-    color: whitesmoke;
+    color: black;
   }
-}
-
-.home2-img {
-  margin-left: -5em;
 }
 
 .home2-title {
   margin-bottom: 1em;
   font-size: 1.9em;
+  color: $col-pri-dark;
 }
 
 .flex-container-home {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 4em 0;
+}
+
+.img-fluid {
+  width: 40%;
+}
+
+.img-container {
+  margin-left: 3em;
+}
+
+.home2-img {
+  margin: 0 1em;
 }
 
 .flex-item-home {
-  padding: 2em 1em;
+  padding: 2em 0;
   width: 50%;
+  margin-bottom: 2em;
 }
 
 .list {
@@ -231,22 +252,22 @@ img.burger-menu {
 }
 
 .btn-home2  {
-  color: $col-pri-dark;
-  background: whitesmoke;
+  color: white;
+  background: $col-pri-dark;
   border: none;
   outline: 0;
   margin-top: 0.5em;
 
   &:hover, &:active {
-    color: $col-pri-dark !important;
-    background: lighten(whitesmoke, 30%) !important;
+    color: whitesmoke !important;
+    background: lighten($col-pri-dark, 5%) !important;
     border: 0 !important;
     outline: 0 !important;    
   }
 
   &:focus {
-    color: $col-pri-dark !important;
-    background: lighten(whitesmoke, 30%) !important;
+    color: whitesmoke !important;
+    background: lighten($col-pri-dark, 10%) !important;
     box-shadow: none !important;
   }
 }
@@ -265,7 +286,10 @@ img.burger-menu {
   width: 30%;
 }
 
-
+.btn-post {
+  width: 10%;
+  margin-top: 2em;
+}
 
 //cards
 .card {
@@ -285,6 +309,9 @@ img.burger-menu {
   //background: $col-pri-darker;
 }
 
+.post-card {
+  margin: 7em 0;
+}
 
 .card-title {
   color: $col-pri-darker;
@@ -367,10 +394,6 @@ hr {
 }
 
 
-
-
-
-
 //forms///
 form {
   padding: 2em !important;
@@ -446,6 +469,26 @@ form.form-asse {
   }
 }
 
+//blog
+.margin-top {
+  margin-top: 3em;
+}
+
+.post-title {
+  font-weight: bold;
+  font-size: 1.7em;
+}
+
+.post-content-preview {
+  margin-top: 1.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.new-post-title {
+  margin-left: 1em;
+}
+
 
 //footer
 footer {
@@ -453,17 +496,17 @@ footer {
   box-shadow: 0 55vh 0 55vh $col-foot-bg;
   padding: 2em 2em 0 2em;
 
- .footer-contact p, .footer-contact i {
+ .footer-contact p, .copyright p {
    color: black;
+ }
+
+ hr {
+   border-color: black;
  }
 
   .copyright {
     font-size: 0.8em;
     margin: 0 0 0.3em 0;
-
-    p {
-      color: black;
-    }
   }
 }
 
@@ -487,7 +530,7 @@ footer {
 
     .feather {
       //stroke: white;
-      stroke: $col-pri-darker;
+      stroke: black;
       padding-top: 0;
       margin-right: 1em;
 
@@ -550,11 +593,6 @@ ul li {
 @media only screen and (min-width: 299px) and (max-width: 768px) {
   h1,h2,h3,h4,h5,h6,p,i,li {
     font-size: 2.5em;
-  }
-
-  .hero {
-    width: 105vw;
-    margin-left: -1em;
   }
 
   .call-to-action {

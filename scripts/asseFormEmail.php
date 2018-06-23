@@ -37,9 +37,6 @@ header("Location: ../html/assessment.php");
 
 
 
-
-
-
 // Function to validate against any email injection attempts
 function IsInjected($str)
 {

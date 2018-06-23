@@ -48,47 +48,46 @@
 </div>
 
 
+<h1 class="text-center col-pri-dark">Other Locations</h1>
 
-  <h1 class="text-center col-pri-dark">Other Locations</h1>
-
-  <div class="flex-container-contact2">
-    <div class="flex-item card">
-      <h4>Kareer Krafters India Pvt. Ltd.</h4> <br>
-      <p>
-        405/ B Vertax Vikas, M.V. Road</br>
-        Andheri (E) </br>
-        Mumbai, Maharashtra-400 069 </br>
-      </p>
-      <p>
-        <i data-feather="phone"></i> 91-222-684-2210 </br>
-        <i data-feather="phone"></i> 91-222-684-2728 </br> 
-      </p>   
-    </div>
-
-    <div class="flex-item card">
-      <h4>Bilal Ali-Bokhari</h4> <br>
-      <p>
-        APT #1A, 455A Adra Colony,Tench Road</br>
-        Rawalpindi, Lahore </br>
-      </p>
-      <p>
-        <i data-feather="phone"></i> +92­-­51­-­5524923</br>
-        <i data-feather="smartphone"></i></i> 0300­-­8557494</br> 
-      </p>   
-    </div>
-
-    <div class="flex-item card">
-      <h4>Toronto Office</h4> <br>
-      <p>
-        150 Ferrand Drive, Suite 1501 </br>
-        Toronto, ON </br>
-        M3C 3E5 </br> 
-      </p>
-      <p>
-        <i data-feather="phone"></i> 905-625-9933</br>
-      </p>   
-    </div>
+<div class="flex-container-contact2">
+  <div class="flex-item card">
+    <h4>Kareer Krafters India Pvt. Ltd.</h4> <br>
+    <p>
+      405/ B Vertax Vikas, M.V. Road</br>
+      Andheri (E) </br>
+      Mumbai, Maharashtra-400 069 </br>
+    </p>
+    <p>
+      <i data-feather="phone"></i> 91-222-684-2210 </br>
+      <i data-feather="phone"></i> 91-222-684-2728 </br> 
+    </p>   
   </div>
+
+  <div class="flex-item card">
+    <h4>Bilal Ali-Bokhari</h4> <br>
+    <p>
+      APT #1A, 455A Adra Colony,Tench Road</br>
+      Rawalpindi, Lahore </br>
+    </p>
+    <p>
+      <i data-feather="phone"></i> +92­-­51­-­5524923</br>
+      <i data-feather="smartphone"></i></i> 0300­-­8557494</br> 
+    </p>   
+  </div>
+
+  <div class="flex-item card">
+    <h4>Toronto Office</h4> <br>
+    <p>
+      150 Ferrand Drive, Suite 1501 </br>
+      Toronto, ON </br>
+      M3C 3E5 </br> 
+    </p>
+    <p>
+      <i data-feather="phone"></i> 905-625-9933</br>
+    </p>   
+  </div>
+</div>
 
 <script async defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-KE-F52AwwpwcAQlKBDT6216FfvV8aDg&callback=initMap">
