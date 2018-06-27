@@ -1,28 +1,53 @@
 <?php     
     session_start();
-    if ($_POST['login']) {
+    if (isset($_POST['login'])) {
         include_once("db.php");
         $username = strip_tags($_POST['username']);
         $password = strip_tags($_POST['password']);
 
-        $sql = "";
+        $username = stripslashes($username);
+        $password = stripslashes($password);
+
+        $username = mysqli_real_escape_string($db, $username);
+        $password = mysqli_real_escape_string($db, $password);
+                
+        $password = md5($password);
+
+        $sql = "SELECT * FROM accounts where username='$username' LIMIT 1";
+        $query = mysqli_query($db, $sql);
+        $row = mysqli_fetch_array($query);
+        $id = $row['id'];
+        $db_password = $row['password'];
+
+        //check if entered password is correct
+        if ($password == $db_password) {
+            $_SESSION['username'] = $username;
+            $_SESSION['id'] = $id;
+            header("Location: index.php");
+        }
+        else {
+            echo "Incorrect username or password entered!";        
+        }
     }
 
     echo file_get_contents("./header.html"); 
 ?>
 
-<h1>Admin Login</h1>
+<h1 class="page-title">Admin Login</h1>
 
-<form action="" method="post" class="margin-top">
+<form action="admin.php" method="post" class="margin-top">
     <div class="form-group">
-        <label for="username">Username</label>
+        <label for="username">Username: </label>
         <input type="text" name="username" required>
     </div>
     <div class="form-group">
-        <label for="password">Password</label>
+        <label for="password">Password: </label>
         <input class="" type="password" name="password" 
                minLength="8" required 
                placeholder="" />
+    </div>
+    <div class="form-group">
+        <input name="login" type="submit" value="Login">
     </div>
 </form>
 
