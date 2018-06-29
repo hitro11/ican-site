@@ -26,7 +26,7 @@
 
   <div class="flex-container-home">
     <div class="flex-item-home">
-        <h4 class="home2-title">We provide professional services for</h4>  
+      <h4 class="home2-title">We provide professional services for</h4> 
         <ul>
           <li>Permanent Resident Visas</li>
           <li>Student Visas</li>
@@ -38,12 +38,11 @@
     <div class="flex-item-home img-container">
       <img src="../assets/it.jpg" class="img-fluid home2-img" width:="50%" alt="">
       <img src="../assets/student.jpg" class="img-fluid home2-img" width:="50%" alt="">
-
     </div>
   </div>
 
   <div class="news">
-    <h1 class="">News</h1>
+    <h1 class="home2-news-title">News</h1>
   </div>
 
 </div>

@@ -30,6 +30,12 @@
         }
     }
 
+    if (isset($_GET['logout'])) {
+        session_start();
+        session_destroy();
+        header("Location: index.php");
+    }
+
     echo file_get_contents("./header.html"); 
 ?>
 
@@ -50,5 +56,7 @@
         <input name="login" type="submit" value="Login">
     </div>
 </form>
+
+<a class="btn btn-primary" href="admin.php?logout=true">Logout</a>
 
 <?php echo file_get_contents("./footer.html"); ?>

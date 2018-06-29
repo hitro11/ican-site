@@ -1,5 +1,11 @@
 <?php 
     session_start();
+
+    // checks if admin is logged in 
+    if(!isset($_SESSION['id'])) {
+        header("Location: admin.php");
+    }
+
     include_once("db.php");
     echo file_get_contents("./header.html"); 
 
@@ -25,7 +31,7 @@
     <h2 class="new-post-title" >New Post</h2>
     <form action="blog-new.php" method="post" enctype="multipart/form-data">
         <div class="form-group">
-            <input placeholder="Title" name="title" class="form-control" type="text" autofocus size="30"><br/>
+            
             <textarea placeholder="Content" name="content" class="form-control" rows="45"></textarea>
             <input class="btn btn-primary btn-post" name="post" type="submit" value="Post">            
         </div>
