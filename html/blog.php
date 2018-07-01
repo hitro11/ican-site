@@ -45,7 +45,13 @@
                     ...      
                 </p>
 
-                <a href='./about.php' class='btn btn-primary btn-post'>Read More</a>
+                <div class='left'>
+                    <a href='./about.php' class='btn btn-primary btn-post'>Read More</a>
+                    <a href='blogpost-edit.php?pid=$id' class='btn-post btn'>Edit</a>
+                    <a href='blogpost-del.php?pid=$id' class='btn-post btn'>Delete</a>                
+                </div>
+
+                
              </div>";
         }
 
