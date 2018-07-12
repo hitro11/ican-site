@@ -421,6 +421,10 @@ form.form-asse #edu, form.form-asse #edu-spouse {
   margin-bottom: 0.5em;
 }
 
+.btn-logout {
+  margin: 3em;
+}
+
 .margin-top {
   margin-top: 3em;
 }

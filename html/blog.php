@@ -2,6 +2,7 @@
     session_start();
     include_once("db.php");
     echo file_get_contents("./header.html"); 
+    
     echo "
     <div class='text'> 
         <h1 class='page-title'>News</h1>                  
@@ -19,7 +20,7 @@
             $id = $row['id'];
             $title = $row['title'];
             $content = $row['content'];
-            $date = $row['date'];
+            $date = substr($row['date'], 0,10);
 
             $output = $bbCode -> Parse($content);
 
@@ -47,12 +48,20 @@
 
                 <div class='left'>
                     <a href='./about.php' class='btn btn-primary btn-post'>Read More</a>
-                    <a href='blogpost-edit.php?pid=$id' class='btn-post btn'>Edit</a>
-                    <a href='blogpost-del.php?pid=$id' class='btn-post btn'>Delete</a>                
-                </div>
+            ";
 
-                
-             </div>";
+             // checks if admin is logged in 
+            if(isset($_SESSION['username'])) {
+                $posts .= 
+                    "<a href='blogpost-edit.php?pid=$id' class='btn-post btn'>Edit</a>
+                     <a href='blogpost-del.php?pid=$id' class='btn-post btn'>Delete</a>
+                ";                
+            }
+
+            $posts .= "
+                    </div>
+                </div>
+            ";
         }
 
         echo $posts;

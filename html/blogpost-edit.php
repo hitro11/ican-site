@@ -1,4 +1,3 @@
-
 <?php 
     session_start();
 
@@ -19,6 +18,7 @@
     if (isset($_POST['update'])) {
         $title = strip_tags($_POST['title']);
         $content = strip_tags($_POST['content']);
+        $date = date("Y-m-d",time());
 
         $title = mysqli_real_escape_string($db, $title);
         $content = mysqli_real_escape_string($db, $content);
@@ -27,7 +27,7 @@
             echo "Please fill in all fields.";
         }
 
-        $sql = "UPDATE posts SET title='$title', content='$content' WHERE id='$pid'";
+        $sql = "UPDATE posts SET title='$title', content='$content', date='$date' WHERE id='$pid'";
 
         mysqli_query($db, $sql);
         header("Location: blog.php");
