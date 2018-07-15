@@ -195,13 +195,39 @@ img.burger-menu {
   color: $col-pri !important;
 }
 
-.home2-news-title {
-  margin-bottom: 1em;
-  color: $col-pri !important;
+.home-contact {
+  margin: 6em 0;
+  padding: 1em;
+  background: $col-pri-darker;
+
+  h4 {
+    color: white;
+  }
+
+  a {
+    margin-top: 0.2em;
+    margin-left: 4em;
+    color: $col-pri-dark;
+    background: white;
+
+    &:hover, &:active {
+      background: whitesmoke !important;  
+    }
+  
+    &:focus {
+      background: $col-pri !important;
+      box-shadow: none !important;
+    }
+  }
 }
 
-.home2-news-container {
+.news-title-home {
+  color: $col-pri-dark !important;
+}
 
+.news-container {
+  margin: 0 5em;
+  flex-flow: row wrap;
 }
 
 .flex-container-home {
@@ -295,16 +321,20 @@ img.burger-menu {
 }
 
 .btn-post {
-  width: 10%;
-  margin-top: 2em;
+  color: $col-pri-dark !important;
+  margin-top: 1em;
+
+  &:hover, &:active {
+    color: $col-pri !important;   
+  }
 }
 
 // cards
 .card {
   box-shadow: 0 14px 28px rgba(0,0,0,0.30), 0 10px 10px rgba(0,0,0,0.35);
-  background: whitesmoke;
+  background: white;
   padding: 1em;
-  margin: 0 1em 1em 1em;
+  margin: 0 1.5em 3em 1.5em;
 }
 
 .contact-card {
@@ -317,8 +347,13 @@ img.burger-menu {
   //background: $col-pri-darker;
 }
 
-.post-card {
-  margin: 7em 0;
+.blogpost-card {
+  margin: 4em 1.5em;
+  flex: 1 1 40%;
+}
+
+.blog-card {
+  background: whitesmoke;
 }
 
 .card-title {
@@ -328,9 +363,7 @@ img.burger-menu {
 hr { 
   border-color: $col-nav-bg;
   width: 100%;
-  //margin-top: -0.5em;
  }
-
 
 
 
@@ -477,7 +510,7 @@ form.form-asse {
   }
 }
 
-// blog
+// news
 .btn-logout {
   margin: 3em;
 }
@@ -487,8 +520,13 @@ form.form-asse {
 }
 
 .post-title {
+  margin: 2em 0 0 0;
+  font-size: 3em;
+}
+
+.post-title-card {
   font-weight: bold;
-  font-size: 1.7em;
+  font-size: 1.5em;
 }
 
 .post-content-preview {
@@ -623,12 +661,6 @@ ul li {
     transform: scale(1);
   }
 
-  .home2 {
-    width: 100vw;
-    margin-left: -1em;
-
-  }
-
   .home-sec {
     margin: 2em;
 
@@ -642,6 +674,52 @@ ul li {
 
   }
 
+  .home2 {
+    width: 100vw;
+    margin-left: -1em;
+  }
+
+  .flex-item-home {
+
+    .home2-title {
+      font-size: 1.5em;
+    }
+
+    .home2-img {
+      width: 100%;
+      margin-bottom: 2em;
+    }
+
+    .extra {
+      display: none;
+    }
+
+    p {
+      font-size: 1em;
+    }
+
+    li {
+      font-size: 1em;
+    }
+  }
+
+  .home-contact {
+    h4 {
+      font-size: 1.5em;
+    }
+  }
+
+  .blogpost-card {
+    flex: 1 1 50%;
+
+    p {
+      font-size: 1em;
+
+    }
+  }
+
+  
+  //all-pages
   .page-title {
     margin-top: 2.5em;
     font-size: 2.5em;
@@ -680,7 +758,7 @@ ul li {
   }
 
   .card {
-    margin-bottom: 3em;
+    
   }
 
   // assessment page 
@@ -799,4 +877,47 @@ ul li {
     }
 
   }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 450px) {
+
+  .flex-container-home {
+    display: block;
+    width: 100%;
+  }
+
+  .flex-item-home {
+    width: 100%;
+    margin: -2em 0;
+
+    .home2-title {
+      font-size: 1.3em;
+      
+    }
+
+    .home2-img {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+  .home-contact h4 {
+    font-size: 1.2em;    
+  }
+
+  .news-container {
+    display: block;
+    margin: 1em -1em;
+  }
+
+  .blogpost-card {
+    flex: 1 1 100%;
+
+    p {
+      font-size: 1em;
+
+    }
+  }
+
+
 }
